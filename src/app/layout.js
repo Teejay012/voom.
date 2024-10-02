@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="max-w-[390px] border-2 border-red-500 h-full p-3 relative mb-[100px]">
+        <main className="max-w-[390px] border-2 border-red-500 h-full px-3 pt-3 relative">
           {children}
         </main>
         <Nav />

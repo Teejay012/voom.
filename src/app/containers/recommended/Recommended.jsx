@@ -49,9 +49,10 @@ const Recommended = () => {
         </div>
 
         <div className="flex items-start justify-between overflow-auto gap-3 my-3">
-            {products.map((content) => (
+            {products.map((content, index) => (
                 <div>
                     <Product
+                        key={index}
                         image={content.image}
                         name={content.name}
                         price={content.price}

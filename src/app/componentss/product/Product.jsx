@@ -8,7 +8,7 @@ const Product = ({ image, name, price}) => {
         <div className="rounded-[15px] overflow-hidden w-[160px] h-[171px] relative mb-3">
             <Image
                 src={image}
-                alt="product"
+                alt={name}
                 className="w-full h-full object-center"
             />
 

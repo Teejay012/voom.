@@ -5,7 +5,7 @@ import { MdMoreVert } from "react-icons/md";
 
 const Nav = () => {
   return (
-    <div className="fixed left-0 bottom-0 z-30 h-[70px] p-3 w-[390px] bg-[#fff] rounded-[15px] shadow-md">
+    <div className="fixed left-0 bottom-0 z-30 h-[70px] p-3 w-[390px] bg-[#fff] rounded-[15px]">
         <ul className="flex justify-between items-center w-full h-full">
             <li>
                 <a href="#" className="flex flex-col items-center justify-center gap-2 text-secondary-color">

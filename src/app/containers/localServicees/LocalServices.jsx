@@ -63,9 +63,10 @@ const LocalServices = () => {
         </div>
 
         <div className="flex items-start justify-between overflow-auto gap-3 my-3">
-            {services.map((content) => (
+            {services.map((content, index) => (
                 <div>
                     <Service
+                        key={index}
                         image={content.image}
                         name={content.name}
                         price={content.price}

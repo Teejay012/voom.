@@ -7,7 +7,7 @@ import LocalServices from "./containers/localServicees/LocalServices";
 
 export default function Home() {
   return (
-    <div>
+    <div className="pb-[100px]">
         <Header />
         <Search />
         <Categories />
