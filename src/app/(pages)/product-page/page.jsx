@@ -4,6 +4,7 @@ import shoe from "@/app/public/assets/shoe.png"
 import { FaStar } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
+import { GiShoppingBag } from "react-icons/gi";
 
 
 const products = [
@@ -61,6 +62,12 @@ const page = () => {
             <button className='h-[32px] w-[32px] flex justify-center items-center rounded-[50%] bg-[#EEF3FF] absolute top-[54px] right-[20px] z-10'>
                 <FaHeart className='text-[17px] text-[#8E6CEF]'/>
             </button>
+
+            <div className='flex items-center justify-center absolute bottom-[20px] gap-2 left-[50%] transform translate-x-[-50%]'>
+                <div className='w-[10px] h-[5px] rounded-[50px] bg-[#fff]'></div>
+                <div className='w-[5px] h-[5px] rounded-[50%] bg-[#fff]'></div>
+                <div className='w-[5px] h-[5px] rounded-[50%] bg-[#fff]'></div>
+            </div>
             
         </div>
 
@@ -114,16 +121,22 @@ const page = () => {
             </div>
 
             <h3 className='text-[15px] font-[600] text-[#8E6CEF]'>2Km Away</h3>
-        </div>  
+        </div>
+
+        <div className="flex items-center justify-between gap-3">
+            <button className='h-[52px] w-full bg-[#8E6CEF] text-[#fff] rounded-[50px] text-[16px] font-[600]'>Buy Now</button>
+            <button className='w-[90px] h-[48px] w-full bg-[#F8F7F7A6] rounded-[50px] flex justify-center items-center'><GiShoppingBag className='text-[#9E9E9E] text-[20px] font-[600]'/></button>
+        </div>
 
 
         <div className='mt-5'>
             <h3 className='text-[16px] font-[600]'>Similar Products</h3>
 
             <div className="flex items-start justify-between overflow-auto gap-3 my-3">
-            {products.map((content) => (
+            {products.map((content, index) => (
                 <div>
                     <Product 
+                        key={index}
                         image={content.image}
                         name={content.name}
                         price={content.price}

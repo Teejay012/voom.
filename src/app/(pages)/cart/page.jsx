@@ -56,15 +56,13 @@ const CartPage = () => {
 
         <div className='my-5 flex flex-col'>
             {cartProducts.map((content) => (
-                <>
-                    <Cart 
-                        key={content.id}
-                        name={content.name}
-                        image={content.image}
-                        price={content.price}
-                        numberOfProducts={content.numberOfProducts}
-                    />
-                </>
+                <Cart 
+                    key={content.id}
+                    name={content.name}
+                    image={content.image}
+                    price={content.price}
+                    numberOfProducts={content.numberOfProducts}
+                />
             ))}
         </div>
 

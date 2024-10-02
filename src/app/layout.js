@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="max-w-[390px] border-2 border-red-500 h-full px-3 pt-3 relative">
+        <main className="max-w-[390px] border-2 border-red-500 h-full px-3 pt-3 relative mx-auto relative">
           {children}
+          <Nav />
         </main>
-        <Nav />
       </body>
     </html>
   );

@@ -58,7 +58,7 @@ const Cartegories = () => {
                 {productCategories.map((content, index) => (
                     <>
                         <Category
-                            key={content.id}
+                            key={index}
                             name={content.name}
                             image={content.image}
                             from={content.from}
